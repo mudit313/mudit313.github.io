@@ -674,6 +674,9 @@ body {
 .icon-social-github:before {
 	content: "\f1c9"; }
 
+.icon-socicon-xing:before {
+	content: "\e04b";
+}
 .icon-social-google-plus:before {
 	content: "\f1ca"; }
 
