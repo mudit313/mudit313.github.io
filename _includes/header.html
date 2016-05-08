@@ -57,6 +57,16 @@
               </li>
             {% endif %}
 
+              {% if site.author.xing_username %}
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.xing_username }}" title="{{ site.author.xing_username }} on Xing" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">Xing</span>
+                </a>
+              </li>
+              {% endif %}
+
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">

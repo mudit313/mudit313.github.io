@@ -1,0 +1,10 @@
+---
+title:  "Welcome!"
+date:   2016-05-07 15:04:23
+categories: [welcome]
+tags: [jekyll]
+--------------
+Welcome to my [GitHub repo][my-gh]
+
+
+[my-gh]:   https://github.com/minhtuannguyen
