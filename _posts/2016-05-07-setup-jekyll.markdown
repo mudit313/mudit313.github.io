@@ -8,7 +8,7 @@ To build my Github's page, I forked [jekyll-uno][jekyll-gh]. It's  easy to write
 
 During installation, I have encountered some issues, which extremely frustrating and take much time to find out what is wrong.
   
-1. Do make jekyll run locally, I must install all gem locally, which end up with some strange error, that libxml2 could not be found on my mac 
+1. To make jekyll run locally, I must install all gem locally, which end up with some strange error, that libxml2 could not be found on my mac 
 
 ``` ruby
 $ bundle install --path vendor/bundle
