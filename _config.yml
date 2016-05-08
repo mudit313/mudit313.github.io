@@ -4,7 +4,7 @@ description: 'Welcome to my page'
 url: 'https://minhtuannguyen.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: 'minhtuannguyen2704'
+disqus_shortname: 'mtnguyensblog'
 
 author:
   name: 'Minh Tuan Nguyen'
