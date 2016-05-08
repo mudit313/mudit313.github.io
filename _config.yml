@@ -1,7 +1,7 @@
 # Site settings
 title: Minh Tuan Nguyen
 description: 'Welcome to my page'
-url: 'http://minhtuannguyen.github.io'
+url: 'https://minhtuannguyen.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'minhtuannguyen2704'
