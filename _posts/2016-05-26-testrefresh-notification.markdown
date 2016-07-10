@@ -16,7 +16,7 @@ $ brew install terminal-notifier
 
 2. Configure the Leiningen's profiler your/home/folder/.lein/profiles.clj
 
-```json
+```clojure
   {:user {:plugins      [[com.jakemccrary/lein-test-refresh "0.11.0"]]
          :test-refresh  {:notify-command ["terminal-notifier" 
                                           "-title" "Tests"
@@ -32,7 +32,7 @@ $ sudo apt-get install libnotify-bin
 
 2. Configure the Leiningen's profiler your/home/folder/.lein/profiles.clj
 
-```json
+```clojure
  {:user {:plugins      [[com.jakemccrary/lein-test-refresh "0.11.0"]]
         :test-refresh  {:notify-command ["notify-send" "Tests"]}}}
 ```
