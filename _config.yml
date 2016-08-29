@@ -1,39 +1,44 @@
-# Site settings
+---
 title: Minh Tuan Nguyen
-description: 'Welcome to my page'
-url: 'https://minhtuannguyen.github.io'
-baseurl: '/'
-google_analytics: 'UA-35260710-2'
-disqus_shortname: 'mtnguyensblog'
-
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+description: Welcome to my page
+url: https://minhtuannguyen.github.io
+baseurl: "/"
+google_analytics: UA-35260710-2
+disqus_shortname: mtnguyensblog
 author:
-  name: 'Minh Tuan Nguyen'
+  name: Minh Tuan Nguyen
   email: minhtuannguyen2704@gmail.com
   twitter_username: minhtuan_nguyen
-  github_username:  minhtuannguyen
-  linkedin_username:  minh-tuan-nguyen-14154733
+  github_username: minhtuannguyen
+  linkedin_username: minh-tuan-nguyen-14154733
   xing_username: MinhTuan_Nguyen5
-
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
 destination: _site
 paginate: 10
-permalink: /:year/:title/
+permalink: "/:year/:title/"
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
   hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+gems:
+- jekyll-paginate
+exclude:
+- README.md
+- vendor
+- Gemfile
+- Gemfile.lock
+- screenshot.png
