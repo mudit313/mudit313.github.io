@@ -1,10 +1,8 @@
 ---
-title: Test Refresh Notification
-date: 2016-05-26 01:04:43 Z
-categories:
-- clojure
-tags:
-- clojure test-fresh plugins
+title:  "Test Refresh Notification"
+date:   2016-05-26 01:04:43
+categories: [clojure]
+tags: [clojure test-fresh plugins]
 ---
 
 During my work with clojure, [test-refresh] is one of my favourite plugin, which allows me to feedback very fast whether my code change has broken tests. Test-refresh offers a useful feature to notify you with result. The notification can be set up easily. I've tested it on Mac OSX and Ubuntu    

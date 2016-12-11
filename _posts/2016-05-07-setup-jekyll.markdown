@@ -1,12 +1,9 @@
 ---
-title: Setup Jekyll for my Github Page
-date: 2016-05-07 15:04:23 Z
-categories:
-- installation
-tags:
-- jekyll
+title:  "Setup Jekyll for my Github Page"
+date:   2016-05-07 15:04:23
+categories: [installation]
+tags: [jekyll]
 ---
-
 To build my Github's page, I forked [jekyll-uno][jekyll-gh]. It's  easy to write posts with markdown and is integrated with Github Pages [name.github.io].
 
 During installation, I have encountered some issues, which extremely frustrating and take much time to find out what is wrong.
