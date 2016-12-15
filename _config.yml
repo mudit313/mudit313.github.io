@@ -1,17 +1,17 @@
 # Site settings
-title: Minh Tuan Nguyen
+title: Mudit Agrawal
 description: 'Welcome to my page'
-url: 'https://minhtuannguyen.github.io'
+url: 'https://mudit313.github.io'
 baseurl: '/'
 google_analytics: 'UA-35260710-2'
 disqus_shortname: 'mtnguyensblog'
 
 author:
-  name: 'Minh Tuan Nguyen'
-  email: minhtuannguyen2704@gmail.com
-  github_username:  minhtuannguyen
-  linkedin_username:  minh-tuan-nguyen-14154733
-  xing_username: MinhTuan_Nguyen5
+  name: 'Mudit Agrawal'
+  email: muditag313@gmail.com
+  github_username:  mudit313
+  linkedin_username:  mudit313
+  facebook_username: muddu313
 
 defaults:
   -
