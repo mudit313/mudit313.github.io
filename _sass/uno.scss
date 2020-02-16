@@ -1433,20 +1433,24 @@ i {
 	padding: 0;
 	list-style-type: none;
 	text-align: left; }
-	.post-list li {
-		margin: 0 0 2.2em 0; }
-		.post-list li:last-child hr {
-			display: none; }
+
+.post-list li {
+	margin: 0 0 2.2em 0; }
+
+.post-list li:last-child hr {
+	display: none; }
 
 .post-list__post-title {
 	margin-top: 0;
 	margin-bottom: .2em;
 	font-size: 1.5em;
 	line-height: 1.3em; }
-	.post-list__post-title a {
-		color: #333333; }
-		.post-list__post-title a:hover {
-			color: #b9301c; }
+
+.post-list__post-title a {
+	color: #333333; }
+
+.post-list__post-title a:hover {
+	color: #b9301c; }
 
 .post-list__meta {
 	display: block;
@@ -1465,6 +1469,100 @@ i {
 	width: 30%;
 	margin: 2.2em 0 2.1em 0;
 	border-top: 1px solid #dddddd; }
+
+
+.project-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: left; }
+
+.project-list li {
+	margin: 0 0 0 0;
+	height: 212px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dfe5e7;
+}
+
+.project-image {
+    width: auto;
+    height: 100%;
+    float: left;
+}
+
+.project-title{
+    height: 29px;
+    font-family: SFProDisplay;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #0a0a14;
+}
+
+.project-description{
+    height: 83px;
+    font-family: SFProText;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: -0.1px;
+    color: #7b8a96;
+}
+
+.project-play{
+    float: right;
+    margin: 0 20px 0 0;
+    width: 118px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #1c6cfd;
+}
+
+.project-play-text{
+    height: 19px;
+    font-family: SFProText;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+}
+
+.project-view{
+    margin: 11px 18px 0 0;
+    float: right;
+    height: 40px;
+    font-family: SFProText;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    color: #1c6cfd;
+}
+
+.project-list__meta {
+    margin: 23px 0 0 0;
+    float: left;
+	display: block;
+	font-size: .9em;
+	color: #c7c7c7; }
+
+.project-list__meta--date {
+	margin: 0 .5em 0 .5em;
+	color: #c7c7c7; }
+
+.project-list__meta--tags {
+	margin-left: .5em; }
 
 *:focus {
 	outline: none; }

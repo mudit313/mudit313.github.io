@@ -6,6 +6,16 @@ sitemap:
 
 $(document).ready(function () {
   $('a.blog-button').click(function (e) {
+
+    var par = $('.content-wrapper__inner').children();
+    for(var i=0; i<par.length; i++){
+        console.log(par[i])
+        console.log($(par[i]).hasClass('hidden'));
+        if (!$(par[i]).hasClass('hidden'))
+            $(par[i]).addClass('hidden');
+    }
+    $('.post-list').parent().removeClass('hidden');
+
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
@@ -39,6 +49,15 @@ $(document).ready(function () {
 
 
   $('a.project-button').click(function (e) {
+    var par = $('.content-wrapper__inner').children();
+    for(var i=0; i<par.length; i++){
+        console.log(par[i])
+        console.log($(par[i]).hasClass('hidden'));
+        if (!$(par[i]).hasClass('hidden'))
+            $(par[i]).addClass('hidden');
+    }
+    $('.project-list').parent().removeClass('hidden');
+
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
