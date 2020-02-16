@@ -69,13 +69,13 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.hash && window.location.hash == '#project') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-  }
-
-  $('.navigation-wrapper .project-button').click(function () {
-    $('.navigation-wrapper').toggleClass('visible')
-    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
-  })
+//  if (window.location.hash && window.location.hash == '#project') {
+//    $('.panel-cover').addClass('panel-cover--collapsed')
+//  }
+//
+//  $('.navigation-wrapper .project-button').click(function () {
+//    $('.navigation-wrapper').toggleClass('visible')
+//    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+//  })
 
 })
