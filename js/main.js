@@ -30,6 +30,19 @@ $(document).ready(function () {
   if (window.location.hash && window.location.hash == '#blog') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
+  if (window.location.hash && window.location.hash == '#project') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
+    var par = $('.content-wrapper__inner').children();
+    for(var i=0; i<par.length; i++){
+        if (!$(par[i]).hasClass('hidden'))
+            $(par[i]).addClass('hidden');
+    }
+    $('.project-list').parent().removeClass('hidden');
+  }
+
+  if (window.location.pathname !== '{{ site.url }}' && window.location.pathname !== '{{ site.url }}index.html') {
+    $('.panel-cover').addClass('panel-cover--collapsed')
+  }
 
   $('.btn-mobile-menu').click(function () {
     $('.navigation-wrapper').toggleClass('visible animated bounceInDown')
@@ -45,10 +58,9 @@ $(document).ready(function () {
 
 
   $('a.project-button').click(function (e) {
+    console.log("Project button clicked");
     var par = $('.content-wrapper__inner').children();
     for(var i=0; i<par.length; i++){
-        console.log(par[i])
-        console.log($(par[i]).hasClass('hidden'));
         if (!$(par[i]).hasClass('hidden'))
             $(par[i]).addClass('hidden');
     }

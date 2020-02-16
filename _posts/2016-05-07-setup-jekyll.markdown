@@ -1,4 +1,5 @@
 ---
+type: post
 title:  "Setup Jekyll for my Github Page"
 date:   2016-05-07 15:04:23
 categories: [installation]

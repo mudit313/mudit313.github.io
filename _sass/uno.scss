@@ -1482,6 +1482,7 @@ i {
 	height: 212px;
 	border-style: solid;
 	border-width: 1px;
+	border-radius: 6px;
 	border-color: #dfe5e7;
 }
 
@@ -1489,6 +1490,7 @@ i {
     width: auto;
     height: 100%;
     float: left;
+    border-radius: 6px;
 }
 
 .project-title{
@@ -1520,12 +1522,13 @@ i {
     margin: 0 20px 0 0;
     width: 118px;
     height: 40px;
-    border-radius: 4px;
     background-color: #1c6cfd;
+    cursor: pointer;
 }
 
 .project-play-text{
-    height: 19px;
+    margin: .4em 0 0 0;
+    height: 21px;
     font-family: SFProText;
     font-size: 16px;
     font-weight: 600;
@@ -1551,7 +1554,7 @@ i {
 }
 
 .project-list__meta {
-    margin: 23px 0 0 0;
+    margin: 7px 0 0 0;
     float: left;
 	display: block;
 	font-size: .9em;

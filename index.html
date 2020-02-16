@@ -7,17 +7,19 @@ robots: noindex
 
   <ol class="post-list">
     {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
-            {% if post.tags.size > 0 %}
-            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
-            {% endif %}
-        </div>
-        <hr class="post-list__divider">
-      </li>
+      {% if post.type == 'post' %}
+          <li>
+            <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+            <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
+            <div class="post-list__meta">
+                <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+                {% if post.tags.size > 0 %}
+                &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+                {% endif %}
+            </div>
+            <hr class="post-list__divider">
+          </li>
+      {% endif %}
     {% endfor %}
   </ol>
 
@@ -31,17 +33,24 @@ robots: noindex
 
 <div class="main-post-list hidden">
     <ol class="project-list">
-        <li>
-            <img src="/images/Scrabble.png" class="project-image">
-            <h3 class="project-title">Scrabble for Hindi</h3>
-            <!--<h2 class="project-title"><a href="/2016/setup-jekyll/" title="Setup Jekyll for my Github Page">Setup Jekyll for my Github Page</a></h2>-->
-            <p class="project-description">To build my Github’s page, I forked jekyll-uno. It’s  easy to write posts with markdown and is integrated with Github Pages [name.github.io].</p>
-            <div class="project-list__meta">
-                <time datetime="7 May 2016" class="project-list__meta--date date">7 May 2016</time>
-            </div>
-            <button class="project-play" type="button"><h3 class="project-play-text">Play Now</h3></button>
-            <h3 class="project-view">View Project Code</h3>
-        </li>
+
+        {% for project in paginator.posts %}
+            {% if project.type == 'project' %}
+            <li>
+                <img src="/images/{{ project.image }}" class="project-image">
+                <h3 class="project-title">{{ project.title }}</h3>
+                <p class="project-description">{{ project.excerpt | strip_html}}</p>
+                <div class="project-list__meta">
+                    <time datetime="{{ project.date | date: '%-d %b %Y' }}" class="project-list__meta--date date">{{ project.date | date: "%B %Y" }}</time>
+                </div>
+                <button class="project-play" type="button" onclick="window.location.href = '{{ project.play-url }}';"><h3 class="project-play-text">{{ project.play-text | default: 'Play Now' }}</h3></button>
+                <h3 class="project-view">View Project Code</h3>
+            </li>
+            <hr class="post-list__divider">
+            {% endif %}
+        {% endfor %}
 
     </ol>
 </div>
+
+
