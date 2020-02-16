@@ -40,7 +40,8 @@ $(document).ready(function () {
     $('.project-list').parent().removeClass('hidden');
   }
 
-  if (window.location.pathname !== '{{ site.url }}' && window.location.pathname !== '{{ site.url }}/index.html') {
+
+  if (window.location.pathname !== '{{ site.url }}' && window.location.pathname !== '{{ site.url }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
