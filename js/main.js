@@ -41,7 +41,8 @@ $(document).ready(function () {
   }
 
   console.log(window.location.pathname)
-  console.log("{{ site.url }}{{ site.baseurl }}")
+  console.log("{{ site.url }}")
+  console.log("{{ site.baseurl }}")
 
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
