@@ -1,7 +1,7 @@
 ---
 layout: null
 sitemap:
-  exclude: 'yes'
+exclude: 'yes'
 ---
 
 $(document).ready(function () {
@@ -40,8 +40,10 @@ $(document).ready(function () {
     $('.project-list').parent().removeClass('hidden');
   }
 
+  console.log(window.location.pathname)
+  console.log("{{ site.url }}{{ site.baseurl }}")
 
-  if (window.location.pathname !== '{{ site.url }}' && window.location.pathname !== '{{ site.url }}index.html') {
+  if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
