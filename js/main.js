@@ -9,8 +9,6 @@ $(document).ready(function () {
 
     var par = $('.content-wrapper__inner').children();
     for(var i=0; i<par.length; i++){
-        console.log(par[i])
-        console.log($(par[i]).hasClass('hidden'));
         if (!$(par[i]).hasClass('hidden'))
             $(par[i]).addClass('hidden');
     }
@@ -42,9 +40,9 @@ $(document).ready(function () {
 
   console.log(window.location.pathname)
   console.log("{{ site.url }}")
-  console.log()
+  console.log("{{ '/' | relative_url }}")
 
-  if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
+  if (window.location.pathname !== '{{ '/' | relative_url }}' && window.location.pathname !== '{{ '/' | relative_url }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
@@ -62,7 +60,6 @@ $(document).ready(function () {
 
 
   $('a.project-button').click(function (e) {
-    console.log("Project button clicked");
     var par = $('.content-wrapper__inner').children();
     for(var i=0; i<par.length; i++){
         if (!$(par[i]).hasClass('hidden'))
