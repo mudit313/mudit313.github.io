@@ -1494,6 +1494,7 @@ i {
 }
 
 .project-title{
+    margin-left: 220px;
     height: 29px;
     font-family: SFProDisplay;
     font-size: 24px;
@@ -1506,6 +1507,7 @@ i {
 }
 
 .project-description{
+    margin-left: 220px;
     height: 83px;
     font-family: SFProText;
     font-size: 16px;
@@ -1566,6 +1568,16 @@ i {
 
 .project-list__meta--tags {
 	margin-left: .5em; }
+
+.project-list__divider {
+	width: 30%;
+	margin: 1.0em 0 1.0em 0;
+	border-top: 1px solid #ffffff; }
+
+.about-me-text{
+    font-family: montserrat;
+    font-size: 1.5em;
+}
 
 *:focus {
 	outline: none; }

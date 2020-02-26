@@ -1,0 +1,10 @@
+---
+type: project
+image: "Tashi.png"
+title:  "Tashi"
+date:   2017-04-12 15:04:23
+play-url: "https://youtu.be/CBm9Rqa9qfo"
+categories: [installation]
+play-text: "Watch Now"
+---
+A game to detect level of dementia among the people. Every level measure different aspect of Dementia like memory, distinguishing colour, determining shape, etc.

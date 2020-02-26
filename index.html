@@ -35,6 +35,7 @@ robots: noindex
     <ol class="project-list">
 
         {% for project in paginator.posts %}
+            <!--<h1>{{ project.type }}</h1>-->
             {% if project.type == 'project' %}
             <li>
                 <img src="{{ '/' | relative_url }}images/{{ project.image }}" class="project-image">
@@ -46,7 +47,19 @@ robots: noindex
                 <button class="project-play" type="button" onclick="window.location.href = '{{ project.play-url }}';"><h3 class="project-play-text">{{ project.play-text | default: 'Play Now' }}</h3></button>
                 <h3 class="project-view">View Project Code</h3>
             </li>
-            <hr class="post-list__divider">
+            <hr class="project-list__divider">
+            {% endif %}
+        {% endfor %}
+
+    </ol>
+</div>
+
+<div class="main-post-list hidden">
+    <ol class="about-me">
+
+        {% for file in paginator.posts %}
+            {% if file.type == 'about-me' %}
+                <h3 class="about-me-text">{{ file.content | strip_html }}</h3>
             {% endif %}
         {% endfor %}
 
