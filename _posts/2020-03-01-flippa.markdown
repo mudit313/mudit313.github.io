@@ -3,7 +3,7 @@ type: project
 image: "Flippa.png"
 title:  "Flippa"
 date:   2020-02-01 15:04:23
-play-url: "Game_Files/collect.zip"
+play-url: "Game_Files/Flippa.zip"
 categories: [installation]
 play-text: "Download"
 download: true

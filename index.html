@@ -45,7 +45,7 @@ robots: noindex
                     <time datetime="{{ project.date | date: '%-d %b %Y' }}" class="project-list__meta--date date">{{ project.date | date: "%B %Y" }}</time>
                 </div>
                 {% if project.download %}
-                <button class="project-play" type="button" onclick="window.open('{{ '/' | absolute_url }}{{ project.play-url }}');">
+                <button class="project-play" type="button" onclick="window.open('{{ '/' | relative_url }}{{ project.play-url }}');">
                 {% else %}
                 <button class="project-play" type="button" onclick="window.location.href = '{{ project.play-url }}';">
                 {% endif %}
@@ -56,7 +56,6 @@ robots: noindex
             <hr class="project-list__divider">
             {% endif %}
         {% endfor %}
-
     </ol>
 </div>
 
