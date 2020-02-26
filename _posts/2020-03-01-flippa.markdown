@@ -1,0 +1,11 @@
+---
+type: project
+image: "Flippa.png"
+title:  "Flippa"
+date:   2020-02-01 15:04:23
+play-url: "Game_Files/collect.zip"
+categories: [installation]
+play-text: "Download"
+download: true
+---
+Game consists of multiple levels. Each level is slightly different from previous one. An object, whose objective is to collect rewards, can be controlled by user in one direction only i.e. forward and backward.

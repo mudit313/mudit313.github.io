@@ -44,7 +44,13 @@ robots: noindex
                 <div class="project-list__meta">
                     <time datetime="{{ project.date | date: '%-d %b %Y' }}" class="project-list__meta--date date">{{ project.date | date: "%B %Y" }}</time>
                 </div>
-                <button class="project-play" type="button" onclick="window.location.href = '{{ project.play-url }}';"><h3 class="project-play-text">{{ project.play-text | default: 'Play Now' }}</h3></button>
+                {% if project.download %}
+                <button class="project-play" type="button" onclick="window.open('{{ project.play-url }}');">
+                {% else %}
+                <button class="project-play" type="button" onclick="window.location.href = '{{ project.play-url }}';">
+                {% endif %}
+                    <h3 class="project-play-text">{{ project.play-text | default: 'Play Now' }}</h3>
+                </button>
                 <h3 class="project-view">View Project Code</h3>
             </li>
             <hr class="project-list__divider">
